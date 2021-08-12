@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    background: #222222;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 18px;
+    padding-bottom: 20px;
+}
+
+.logo {
+    margin-right: 40px;
+}
+
+.nav-right a {
+    margin-right: 33px;
+}
+
+.nav-right a:last-child {
+    margin-right: 0;
+}
