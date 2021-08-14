@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     font-family: 'Lato', sans-serif;
 }
@@ -35,4 +39,353 @@ body {
 
 .nav-right a:last-child {
     margin-right: 0;
+}
+
+.badge {
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background: #F16D7F;
+    position: relative;
+    top: -18px;
+    right: 9px;
+    color: #FFFFFF;
+    padding: 1px 5px;
+}
+
+.top {
+    background: #F1E4E6;
+    background-image: url(../img/top-bg.png);
+    background-repeat: no-repeat;
+    background-position: 15% center;
+    min-height: 764px;
+    position: relative;
+}
+
+.main_title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #222222;
+    position: absolute;
+    top: 290px;
+    left: 55%;
+    display: inline;
+}
+
+.main_title::before {
+    content: '';
+    width: 12px;
+    height: 100%;
+    background: #F16D7F;
+    position: absolute;
+    left: -25px;
+
+}
+
+.title_bolt {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.title_red {
+    color: #F16D7F;
+}
+
+.cards {
+    margin-top: 65px;
+    margin-bottom: 96px;
+}
+
+.cards_top {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.cards_bottom {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+
+.cards_top_item-1 {
+    background-image: url(../img/women.png);
+    padding: 105px 103px;
+
+}
+
+.cards_top_item-2 {
+    background-image: url(../img/men.png);
+    padding: 105px 125px;
+
+}
+
+.cards_top_item-3 {
+    background-image: url(../img/kids.png);
+    padding: 105px 122px;
+
+}
+
+.top_item_text {
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.top_item_title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+
+}
+
+.cards_bottom_item {
+    background-image: url(../img/accesories.png);
+    padding: 65px 0;
+    width: 100%;
+}
+
+.bottom_item_text {
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.bottom_item_title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}
+
+.product {
+    padding-bottom: 95px;
+    text-align: center;
+}
+
+.product_title {
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+}
+
+.product_text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+}
+
+.product_card {
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 38px;
+
+}
+
+.product_card_item {
+    background: #F8F8F8;
+    margin-top: 30px;
+}
+
+.product_card_item:hover {
+    cursor: pointer;
+}
+
+.product_card_info {
+    width: 314px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 28px 20px 16px;
+}
+
+.product_card_title {
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+    text-align: left;
+}
+
+.product_card_subtitle {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    margin-top: 12px;
+    text-align: left;
+}
+
+.product_card_price {
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+    margin-top: 18px;
+    text-align: left;
+}
+
+.more_button {
+    padding: 15px 39px;
+    border: 1px solid #FF6A6A;
+    text-decoration: none;
+    color: #F26376;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.advantages {
+    background: #222224;
+    padding-top: 103px;
+
+}
+
+.advantages_card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages_card_item {
+    text-align: center;
+}
+
+
+
+.advantages_card_title {
+    color: #FBFBFB;
+    font-size: 19.96px;
+    line-height: 24px;
+    margin-bottom: 16px;
+    margin-top: 28px;
+}
+
+.advantages_card_subtitle {
+    color: #FBFBFB;
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    margin-bottom: 104px;
+}
+
+.subscribe {
+    background-image: url(../img/bg-subscribe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.subscribe_contant {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 126px;
+}
+
+.foto_user {
+    text-align: center;
+    margin-top: 97px;
+}
+
+.user_text {
+    margin-top: 30px;
+    width: 350px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+    color: #222224;
+}
+
+.subscribe_form {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.form_title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 167.2%;
+    color: #222224;
+}
+
+.form_subtitle {
+    font-size: 18px;
+    line-height: 167.2%;
+    color: #222224;
+    margin-bottom: 32px;
+}
+
+.form_submit {
+    display: flex;
+}
+
+.email {
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #222224;
+    opacity: 0.67;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 30px 0 0 30px;
+    margin-right: 0;
+}
+
+.submit {
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    background: #F16D7F;
+    border-radius: 0 30px 30px 0;
+    padding: 16px 20px;
+    border: none;
+    margin-left: 0;
+}
+
+.footer {
+    background: #222224;
+}
+
+.footer_info {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.copy {
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+
+}
+
+.facebook {
+    background: #FFFFFF;
+    padding: 8px 10.59px;
+    margin-right: 7px;
+}
+
+.instagram {
+    background: #FFFFFF;
+    padding: 8px 8.6px 7px 7.95px;
+    margin-right: 7px;
+}
+
+.pinterest {
+    background: #FFFFFF;
+    padding: 8px 9.6px 8px 9.93px;
+    margin-right: 7px;
+}
+
+.twitter {
+    background: #FFFFFF;
+    padding: 8px 7.61px 8px 7.95px;
 }
