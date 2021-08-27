@@ -8,6 +8,13 @@ a {
     text-decoration: none;
 }
 
+button,
+input {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
 body {
     font-family: 'Lato', sans-serif;
 }
@@ -52,12 +59,9 @@ body {
 
 .search_btn {
     position: absolute;
-    background: none;
     background-image: url(../img/icon/search.svg);
     background-repeat: no-repeat;
     background-position: center;
-    cursor: pointer;
-    border: none;
     width: 35px;
     height: 30px;
 
@@ -68,9 +72,6 @@ body {
 }
 
 .menu_btn {
-    border: none;
-    background: none;
-    cursor: pointer;
     margin-right: 33px;
 }
 
@@ -435,9 +436,6 @@ body {
 
 }
 
-.social img:hover {
-    fill: #FFFFFF;
-}
 
 .instagram {
     background: #FFFFFF;
@@ -454,4 +452,89 @@ body {
 .twitter {
     background: #FFFFFF;
     padding: 8px 7.61px 8px 7.95px;
+}
+
+.card_page_nav {
+    background: #F8F3F4;
+}
+
+.card_page_nav_content {
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_page_title {
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}
+
+.bread_crumbs ul {
+    list-style: none;
+    display: flex;
+}
+
+.bread_crums_link {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+}
+
+.bread_crumbs_item:not(:last-child):after {
+    content: "/";
+    margin: 0 5px;
+    color: #636363;
+}
+
+.bread_crums_link_active {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+}
+
+.product_pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination_items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 300px;
+    border: 1px solid #EBEBEB;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.link_pagination {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #C4C4C4;
+}
+
+.link_pagination_active {
+    color: #EF5B70;
+}
+
+.pagination_nav_btn {
+    padding: 0;
+}
+
+.card_page_filter {
+    margin: 50px 0 64px 0;
+}
+
+
+.filter_item::after {
+    content: url(../img/icon/filter.svg);
+    margin-left: 11px;
 }
