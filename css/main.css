@@ -567,12 +567,14 @@ body {
     content: url(../img/icon/filter.svg);
     margin-left: 11px;
 }
+
 .product_slider {
     background: #F7F7F7;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .slider_btn {
     display: block;
     width: 47px;
@@ -580,6 +582,7 @@ body {
     background: #ccc;
     position: relative;
 }
+
 .slider_btn::after {
     display: block;
     content: '';
@@ -591,6 +594,7 @@ body {
     top: 12px;
     left: 19px;
 }
+
 .slider_btn::before {
     display: block;
     content: '';
@@ -602,9 +606,11 @@ body {
     top: 19px;
     left: 19px;
 }
+
 .slider_btn:nth-child(3) {
     transform: rotate(180deg);
 }
+
 .slider_btn_active::before {
     display: block;
     content: '';
@@ -616,6 +622,7 @@ body {
     top: 19px;
     left: 19px;
 }
+
 .slider_btn_active::after {
     display: block;
     content: '';
@@ -627,6 +634,7 @@ body {
     top: 12px;
     left: 19px;
 }
+
 .product_annatation_info {
     border: 1px solid #EAEAEA;
     width: 100%;
@@ -636,17 +644,20 @@ body {
     align-items: center;
     transform: translateY(-65px);
     background-color: #fff;
-} 
+}
+
 .product_annatation_info_line {
     border: 0.5px solid #EAEAEA;
     width: 45%;
 }
+
 .product_offer {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
+
 .product_offer_title {
     font-weight: 300;
     font-size: 14px;
@@ -657,6 +668,7 @@ body {
     position: relative;
     text-transform: uppercase;
 }
+
 .product_offer_title::before {
     content: '';
     height: 3px;
@@ -666,6 +678,7 @@ body {
     top: 30px;
     left: 30%;
 }
+
 .product_offer_name {
     text-transform: uppercase;
     font-weight: 300;
@@ -674,6 +687,7 @@ body {
     color: #4D4D4D;
     margin-bottom: 48px;
 }
+
 .product_offer_info {
     font-weight: 300;
     font-size: 14px;
@@ -683,6 +697,7 @@ body {
     width: 555px;
     margin-bottom: 32px;
 }
+
 .product_offer_price {
     font-weight: 300;
     font-size: 24px;
@@ -690,14 +705,17 @@ body {
     color: #EF5B70;
     margin-bottom: 64px;
 }
+
 .product_offer_filter {
     margin-top: 64px;
     margin-bottom: 48px;
 }
+
 .product_offer_btns {
     display: flex;
     flex-direction: column;
 }
+
 .product_add_to_catd {
     align-self: center;
     margin-bottom: 64px;
@@ -707,14 +725,222 @@ body {
     display: flex;
     align-items: center;
 }
+
 .product_add_to_catd::before {
     margin-right: 23px;
     content: url(../img/icon/add-to-cart.svg);
 }
+
 .product_card_items {
     margin-top: 50px;
     margin-bottom: 128px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.card_main_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart_left_items {
+    margin-top: 96px;
+}
+
+.cart_left_item {
+    display: flex;
+    width: 652px;
+    box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+    ;
+}
+
+.cart_left_item:nth-child(1) {
+    margin-bottom: 40px;
+}
+
+.cart_left_item:nth-child(2) {
+    margin-bottom: 72px;
+}
+
+.img_cart_left {
+    height: 306px;
+}
+
+.cart_left_item_info {
+    display: flex;
+    flex-direction: column;
+    margin: 22px 22px 62px 31px;
+
+}
+
+.header_cart_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 42px;
+    position: relative;
+}
+
+
+
+.item_info_title {
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 29px;
+    color: #222222
+}
+
+.close {
+    background-image: url(../img/icon/close.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    margin-left: 114px;
+}
+
+.cart_left_item_info span {
+    font-size: 22px;
+    line-height: 26px;
+    color: #575757;
+    padding-bottom: 6px;
+}
+
+.price_red {
+    color: #EF5B70;
+}
+
+.item_info_quantity label {
+    font-size: 22px;
+    line-height: 26px;
+    color: #575757;
+}
+
+.item_info_quantity input {
+    margin-left: 24px;
+    width: 43px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+    color: #656565;
+    border: 1px solid #EAEAEA;
+}
+
+.cart_left_btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 128px;
+}
+
+.cart_left_btn {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    padding: 17px 41px;
+    border: 1px solid rgba(164, 164, 164, 1)
+}
+
+.cart_right {
+    margin-top: 113px;
+    margin-left: 128px;
+}
+
+.cart_right_form {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.cart_right_form_title {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    margin-bottom: 20px;
+}
+
+.cart_right_form_input {
+    width: 360px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #222222;
+    border: 1px solid #A4A4A4;
+    margin-bottom: 20px;
+    padding: 13px 0 16px 17px;
+}
+
+
+.cart_right_form_btn {
+    align-self: flex-start;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #4A4A4A;
+    padding: 10px 15px;
+    border: 1px solid rgba(164, 164, 164, 1)
+}
+
+.info_pay {
+    background: #F5F3F3;
+    margin-top: 57px;
+    padding: 39px 34px 42px 34px;
+    text-align: center;
+}
+
+.info_pay hr {
+    border: 0.5px solid rgba(226, 226, 226, 1);
+    ;
+    width: 100%;
+    margin-top: 21px;
+    margin-bottom: 17px;
+    display: flex;
+    justify-content: center;
+}
+
+.info_pay_total {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.sub_total {
+    text-transform: uppercase;
+    font-size: 11px;
+    line-height: 13px;
+    color: #4A4A4A;
+    margin-bottom: 12px;
+}
+
+.grand_total {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+}
+
+.total_red {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+}
+
+.info_pay_btn {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background: #F16D7F;
+    padding: 15px 43px 16px 41px;
 }
