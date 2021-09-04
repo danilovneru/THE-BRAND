@@ -944,3 +944,135 @@ body {
     background: #F16D7F;
     padding: 15px 43px 16px 41px;
 }
+
+.registration_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.registration_form {
+    width: 360px;
+    margin-top: 64px;
+    margin-bottom: 96px;
+}
+
+.form_title {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    margin-bottom: 20px;
+}
+
+.form_name {
+    display: flex;
+    flex-direction: column;
+}
+
+.input_form_name {
+    padding: 13px 0 16px 17px;
+    width: 100%;
+    border: 1px solid rgba(164, 164, 164, 1);
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    margin-bottom: 20px;
+}
+
+.checkbox_form {
+    margin-top: 11px;
+    margin-bottom: 33px;
+    align-items: center;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox_input {
+    border: 1px solid #A4A4A4;
+    width: 17px;
+    height: 17px;
+}
+
+.checkbox_label {
+    margin-left: 10px;
+    margin-right: 20px;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000
+}
+
+.form_login {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 39px;
+}
+
+.input_form_login {
+    padding: 13px 0 16px 17px;
+    width: 100%;
+    border: 1px solid rgba(164, 164, 164, 1);
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    margin-bottom: 20px;
+}
+
+.password_info {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+}
+
+.join_now_btn {
+    background: rgba(241, 109, 127, 1);
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    padding: 16px 20px 17px 29px;
+}
+
+.join_now::after {
+    content: url(../img/icon/arrow-right.svg);
+    margin-left: 20px;
+}
+
+.registration_info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 64px;
+    margin-left: 128px;
+}
+
+.reg_info_title {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 22px;
+}
+
+.reg_info_subtitle {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 21px;
+}
+
+.reg_info_item {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+.reg_info_item::before {
+    margin-right: 22px;
+    content: url(../img/icon/checked.svg);
+}
