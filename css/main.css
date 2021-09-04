@@ -1054,6 +1054,7 @@ body {
     line-height: 29px;
     color: #000000;
     margin-bottom: 22px;
+    text-transform: uppercase;
 }
 
 .reg_info_subtitle {
