@@ -20,13 +20,81 @@
             <div class="nav">
                 <div class="nav-left">
                     <a href="index.html"><img src="img/icon/logo.svg" alt="logo" class="logo"></a>
-                    <form class="search_form">
-                        <button type="submit" class="search_btn"></button>
-                        <input type="text" placeholder="Что искать?" class="search_input">
+                    <form class="search_form" action="search">
+                        <label for="search" class="search_btn"></label>
+                        <input type="text" placeholder="Что искать?" class="search_input" id="search" type="search">
                     </form>
                 </div>
                 <div class="nav-right">
-                    <button class="menu_btn"><img src="./img/icon/menu.svg" alt="menu"></button>
+                    <nav class="nav_menu">
+                        <label class="menu_btn" for="menu_switch">
+                            <span></span>
+                            <input id="menu_switch" type="checkbox">
+                            <ul class="menu_list">
+                                <a href="#" class="menu_list_close_btn"></a>
+                                <h3 class="menu_list_title">menu</h3>
+                                <li class="menu_list_item">
+                                    <a href="#">man</a>
+                                    <ul class="menu_sublist">
+                                        <li class="menu_sublist_item">
+                                            <a href="#">Accessories</a>
+                                        </li>
+                                        <li class="menu_sublist_item">
+                                            <a href="#">Bags</a>
+                                        </li>
+                                        <li class="menu_sublist_item">
+                                            <a href="#">Denim</a>
+                                        </li>
+                                        <li class="menu_sublist_item">
+                                            <a href="#">T-Shirts</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu_list_item">
+                                    <a href="#">woman</a>
+                                    <ul class="menu_sublist">
+                                        <li class="menu_sublist_item">
+                                            <a href="#">Accessories</a>
+                                        </li>
+                                        <li class="menu_sublist_item">
+                                            <a href="#">Jackets &amp;&nbsp;Coats</a>
+                                        </li>
+                                        <li class="menu_sublist_item">
+                                            <a href="#">Polos</a>
+                                        </li>
+                                        <li class="menu_sublist_item">
+                                            <a href="#">T-Shirts</a>
+                                        </li>
+                                        <li class="menu_sublist_item">
+                                            <a href="#">Shirts</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu_list_item">
+                                    <a href="#">kids</a>
+                                    <ul class="menu_sublist">
+                                        <li class="menu_sublist_item">
+                                            <a href="#">Accessories</a>
+                                        </li>
+                                        <li class="menu_sublist_item">
+                                            <a href="#">Jackets &amp;&nbsp;Coats</a>
+                                        </li>
+                                        <li class="menu_sublist_item">
+                                            <a href="#">Polos</a>
+                                        </li>
+                                        <li class="menu_sublist_item">
+                                            <a href="#">T-Shirts</a>
+                                        </li>
+                                        <li class="menu_sublist_item">
+                                            <a href="#">Shirts</a>
+                                        </li>
+                                        <li class="menu_sublist_item">
+                                            <a href="#">Bags</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                    </nav>
                     <a href="#"><img src="img/icon/user.svg" alt="user" class="user"></a>
                     <a href="cart.html">
                         <img src="img/icon/cart.svg" alt="cart" class="cart">
@@ -47,7 +115,7 @@
         <section class="registration">
             <div class="container">
                 <div class="registration_content">
-                    <div class="registration_form">
+                    <form class="registration_form">
                         <div class="form_name">
                             <h3 class="form_title">Your Name</h3>
                             <input type="text" class="input_form_name" placeholder="First Name">
@@ -68,18 +136,21 @@
                                 lowercase letters</span>
                         </div>
                         <button type="submit" class="join_now_btn"><span class="join_now">join now</span></button>
-                    </div>
+                    </form>
                     <div class="registration_info">
                         <h3 class="reg_info_title">loyalty has its perks</h3>
-                        <span class="reg_info_subtitle">Get in on the loyalty program where you can earn points and <br>
+                        <p class="reg_info_subtitle">Get in on the loyalty program where you can earn points and
+                            <br>
                             unlock serious perks. Starting with these as soon as you
-                            join:</span>
-                        <span class="reg_info_item">15% off welcome offer</span>
-                        <span class="reg_info_item">Free shipping, returns and exchanges on all orders</span>
-                        <span class="reg_info_item">$10 off a purchase on your birthday</span>
-                        <span class="reg_info_item">Early access to products
-                        </span>
-                        <span class="reg_info_item">Exclusive offers & rewards</span>
+                            join:
+                        </p>
+                        <ul class="registration_info_list">
+                            <li class="reg_info_item">15% off welcome offer</li>
+                            <li class="reg_info_item">Free shipping, returns and exchanges on all orders</li>
+                            <li class="reg_info_item">$10 off a purchase on your birthday</li>
+                            <li class="reg_info_item">Early access to products</li>
+                            <li class="reg_info_item">Exclusive offers & rewards</li>
+                        </ul>
                     </div>
                 </div>
             </div>

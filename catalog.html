@@ -20,14 +20,82 @@
             <div class="nav">
                 <div class="nav-left">
                     <a href="index.html"><img src="img/icon/logo.svg" alt="logo" class="logo"></a>
-                    <form class="search_form">
-                        <button type="submit" class="search_btn"></button>
-                        <input type="text" placeholder="Что искать?" class="search_input">
+                    <form class="search_form" action="search">
+                        <label for="search" class="search_btn"></label>
+                        <input type="text" placeholder="Что искать?" class="search_input" id="search" type="search">
                     </form>
                 </div>
                 <div class="nav-right">
-                    <button class="menu_btn"><img src="./img/icon/menu.svg" alt="menu"></button>
-                    <a href="#"><img src="img/icon/user.svg" alt="user" class="user"></a>
+                    <nav class="nav_menu">
+                        <label class="menu_btn" for="menu_switch">
+                            <span></span>
+                            <input id="menu_switch" type="checkbox">
+                            <ul class="menu_list">
+                                <a href="#" class="menu_list_close_btn"></a>
+                                <h3 class="menu_list_title">menu</h3>
+                                <li class="menu_list_item">
+                                    <a href="#">man</a>
+                                    <ul class="menu_sublist">
+                                        <li class="menu_sublist_item">
+                                            <a href="#">Accessories</a>
+                                        </li>
+                                        <li class="menu_sublist_item">
+                                            <a href="#">Bags</a>
+                                        </li>
+                                        <li class="menu_sublist_item">
+                                            <a href="#">Denim</a>
+                                        </li>
+                                        <li class="menu_sublist_item">
+                                            <a href="#">T-Shirts</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu_list_item">
+                                    <a href="#">woman</a>
+                                    <ul class="menu_sublist">
+                                        <li class="menu_sublist_item">
+                                            <a href="#">Accessories</a>
+                                        </li>
+                                        <li class="menu_sublist_item">
+                                            <a href="#">Jackets &amp;&nbsp;Coats</a>
+                                        </li>
+                                        <li class="menu_sublist_item">
+                                            <a href="#">Polos</a>
+                                        </li>
+                                        <li class="menu_sublist_item">
+                                            <a href="#">T-Shirts</a>
+                                        </li>
+                                        <li class="menu_sublist_item">
+                                            <a href="#">Shirts</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu_list_item">
+                                    <a href="#">kids</a>
+                                    <ul class="menu_sublist">
+                                        <li class="menu_sublist_item">
+                                            <a href="#">Accessories</a>
+                                        </li>
+                                        <li class="menu_sublist_item">
+                                            <a href="#">Jackets &amp;&nbsp;Coats</a>
+                                        </li>
+                                        <li class="menu_sublist_item">
+                                            <a href="#">Polos</a>
+                                        </li>
+                                        <li class="menu_sublist_item">
+                                            <a href="#">T-Shirts</a>
+                                        </li>
+                                        <li class="menu_sublist_item">
+                                            <a href="#">Shirts</a>
+                                        </li>
+                                        <li class="menu_sublist_item">
+                                            <a href="#">Bags</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                    </nav>
+                    <a href="registration.html"><img src="img/icon/user.svg" alt="user" class="user"></a>
                     <a href="#">
                         <img src="img/icon/cart.svg" alt="cart" class="cart">
                         <span class="badge">5</span>
@@ -55,14 +123,90 @@
         <section class="card_page_filter">
             <div class="container">
                 <div class="card_filter_block">
-                    <button class="filter"><span class="filter_item">Filter</span></button>
+                    <div class="filter">
+                        <label class="filter_btn" for="switch_filter">
+                            <span class="filter_item">Filter</span>
+                        </label>
+                        <input type="checkbox" id="switch_filter">
+                        <ul class="filter_list">
+                            <li class="filter_list_item">
+                                <a class="filter_list_link" href="#">category</a>
+                            </li>
+                            <ul class="category_list">
+                                <li class="category_list_item">
+                                    <a href="#" class="category_list_link">Accessories</a>
+                                </li>
+                                <li class="category_list_item">
+                                    <a href="#" class="category_list_link">Bags</a>
+                                </li>
+                                <li class="category_list_item">
+                                    <a href="#" class="category_list_link">Denim</a>
+                                </li>
+                                <li class="category_list_item">
+                                    <a href="#" class="category_list_link">Hoodies & Sweatshirts</a>
+                                </li>
+                                <li class="category_list_item">
+                                    <a href="#" class="category_list_link">Jackets & Coats</a>
+                                </li>
+                                <li class="category_list_item">
+                                    <a href="#" class="category_list_link">Polos</a>
+                                </li>
+                                <li class="category_list_item">
+                                    <a href="#" class="category_list_link">Shirts</a>
+                                </li>
+                                <li class="category_list_item">
+                                    <a href="#" class="category_list_link">Shoes</a>
+                                </li>
+                                <li class="category_list_item">
+                                    <a href="#" class="category_list_link">Sweaters & Knits</a>
+                                </li>
+                                <li class="category_list_item">
+                                    <a href="#" class="category_list_link">T-Shirts</a>
+                                </li>
+                                <li class="category_list_item">
+                                    <a href="#" class="category_list_link">Tanks</a>
+                                </li>
+                            </ul>
+                            <li class="filter_list_item">
+                                <a class="filter_list_link" href="#">brand</a>
+                            </li>
+                            <li class="filter_list_item">
+                                <a class="filter_list_link" href="#">designer</a>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="filter_block">
                         <button class="filter_block_btn">
                             <span class="fiter_block_item">Trending now</span>
                         </button>
-                        <button class="filter_block_btn">
-                            <span class="fiter_block_item">Size</span>
-                        </button>
+                        <div class="size">
+                            <input type="checkbox" id="switch_size">
+                            <label class="size_block_btn" for="switch_size">
+                                <span class="fiter_block_item">Size</span>
+                            </label>
+                            <div class="list_size">
+                                <div class="select_size_item">
+                                    <input class="list_size_item" id="select_xsmall" type="checkbox" value="xsmall"
+                                        name="selectName">
+                                    <label class="list_size_item_title" for="select_xsmall">xs</label>
+                                </div>
+                                <div class="select_size_item">
+                                    <input class="list_size_item" id="select_xsmall" type="checkbox" value="xsmall"
+                                        name="selectName">
+                                    <label class="list_size_item_title" for="select_xsmall">s</label>
+                                </div>
+                                <div class="select_size_item">
+                                    <input class="list_size_item" id="select_xsmall" type="checkbox" value="xsmall"
+                                        name="selectName">
+                                    <label class="list_size_item_title" for="select_xsmall">m</label>
+                                </div>
+                                <div class="select_size_item">
+                                    <input class="list_size_item" id="select_xsmall" type="checkbox" value="xsmall"
+                                        name="selectName">
+                                    <label class="list_size_item_title" for="select_xsmall">l</label>
+                                </div>
+                            </div>
+                        </div>
                         <button class="filter_block_btn">
                             <span class="fiter_block_item">Price</span>
                         </button>
@@ -76,7 +220,9 @@
                     <a href="product.html">
                         <div class="product_card_item">
                             <img src="./img/catalog-img/card-1.jpg" alt="card">
-                            <span class="add_to_cart">Add to Cart</span>
+                            <button class="add_to_cart_btn">
+                                <span class="add_to_cart">Add to Cart</span>
+                            </button>
                             <div class="product_card_info">
                                 <h4 class="product_card_title">ELLERY X M'O CAPSULE</h4>
                                 <span class="product_card_subtitle">Known for her sculptural takes on traditional
@@ -90,6 +236,9 @@
                     <a href="product.html">
                         <div class="product_card_item">
                             <img src="./img/catalog-img/card-2.jpg" alt="card">
+                            <button class="add_to_cart_btn">
+                                <span class="add_to_cart">Add to Cart</span>
+                            </button>
                             <div class="product_card_info">
                                 <h4 class="product_card_title">ELLERY X M'O CAPSULE</h4>
                                 <span class="product_card_subtitle">Known for her sculptural takes on traditional
@@ -103,6 +252,9 @@
                     <a href="product.html">
                         <div class="product_card_item">
                             <img src="./img/catalog-img/card-3.jpg" alt="card">
+                            <button class="add_to_cart_btn">
+                                <span class="add_to_cart">Add to Cart</span>
+                            </button>
                             <div class="product_card_info">
                                 <h4 class="product_card_title">ELLERY X M'O CAPSULE</h4>
                                 <span class="product_card_subtitle">Known for her sculptural takes on traditional
@@ -116,6 +268,9 @@
                     <a href="product.html">
                         <div class="product_card_item">
                             <img src="./img/catalog-img/card-4.jpg" alt="card">
+                            <button class="add_to_cart_btn">
+                                <span class="add_to_cart">Add to Cart</span>
+                            </button>
                             <div class="product_card_info">
                                 <h4 class="product_card_title">ELLERY X M'O CAPSULE</h4>
                                 <span class="product_card_subtitle">Known for her sculptural takes on traditional
@@ -129,6 +284,9 @@
                     <a href="product.html">
                         <div class="product_card_item">
                             <img src="./img/catalog-img/card-5.jpg" alt="card">
+                            <button class="add_to_cart_btn">
+                                <span class="add_to_cart">Add to Cart</span>
+                            </button>
                             <div class="product_card_info">
                                 <h4 class="product_card_title">ELLERY X M'O CAPSULE</h4>
                                 <span class="product_card_subtitle">Known for her sculptural takes on traditional
@@ -142,6 +300,9 @@
                     <a href="product.html">
                         <div class="product_card_item">
                             <img src="./img/catalog-img/card-6.jpg" alt="card">
+                            <button class="add_to_cart_btn">
+                                <span class="add_to_cart">Add to Cart</span>
+                            </button>
                             <div class="product_card_info">
                                 <h4 class="product_card_title">ELLERY X M'O CAPSULE</h4>
                                 <span class="product_card_subtitle">Known for her sculptural takes on traditional
@@ -155,6 +316,9 @@
                     <a href="product.html">
                         <div class="product_card_item">
                             <img src="./img/catalog-img/card-7.jpg" alt="card">
+                            <button class="add_to_cart_btn">
+                                <span class="add_to_cart">Add to Cart</span>
+                            </button>
                             <div class="product_card_info">
                                 <h4 class="product_card_title">ELLERY X M'O CAPSULE</h4>
                                 <span class="product_card_subtitle">Known for her sculptural takes on traditional
@@ -168,6 +332,9 @@
                     <a href="product.html">
                         <div class="product_card_item">
                             <img src="./img/catalog-img/card-8.jpg" alt="card">
+                            <button class="add_to_cart_btn">
+                                <span class="add_to_cart">Add to Cart</span>
+                            </button>
                             <div class="product_card_info">
                                 <h4 class="product_card_title">ELLERY X M'O CAPSULE</h4>
                                 <span class="product_card_subtitle">Known for her sculptural takes on traditional
@@ -181,6 +348,9 @@
                     <a href="product.html">
                         <div class="product_card_item">
                             <img src="./img/catalog-img/card-9.jpg" alt="card">
+                            <button class="add_to_cart_btn">
+                                <span class="add_to_cart">Add to Cart</span>
+                            </button>
                             <div class="product_card_info">
                                 <h4 class="product_card_title">ELLERY X M'O CAPSULE</h4>
                                 <span class="product_card_subtitle">Known for her sculptural takes on traditional
